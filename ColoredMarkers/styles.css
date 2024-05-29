@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+     /* cyan rgb(0,255,255)*/
+}
+.container{
+    background-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+.red {
+    background: linear-gradient(180deg,rgb(122,74,14) 0%,rgb(0,255,0) 50%,rgb(0,0,255) 100%); /* orange rgb(255,127,0)  chartreuse rgb(127,255,0)*/
+}
+.blue {
+    background-color: #007F00; /* spring green rgb(0,255,127)  azure rgb(0,127,255)*/ /* cyan rgb(0,255,255)*/
+}
+.green {
+    background-color: hsl(240,100%,50%); /* violet rgb(127,0,255)  rose rgb(255,0,127)*/
+}
