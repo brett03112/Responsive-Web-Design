@@ -14,12 +14,29 @@ h1 {
     width: 200px;
     margin: 10px auto;
 }
-.red {
-    background: linear-gradient(180deg,rgb(122,74,14) 0%,rgb(0,255,0) 50%,rgb(0,0,255) 100%); /* orange rgb(255,127,0)  chartreuse rgb(127,255,0)*/
+.cap{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    
 }
-.blue {
-    background-color: #007F00; /* spring green rgb(0,255,127)  azure rgb(0,127,255)*/ /* cyan rgb(0,255,255)*/
+.sleeve {
+    display: inline-block;
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0,0,0,75%);
+}
+/*colors: (rgba, hex, hsl) hue, saturation lightness alpha channel (0-1, opacity)*/
+.red {
+    background: linear-gradient(rgb(122,74,14) ,rgb(245,62,113) ,rgb(162,27,27)); /* orange rgb(255,127,0)  chartreuse rgb(127,255,0)*/
+    box-shadow: 0 0 20px 0 rgba(83,14,14,.8); /*box-shadow: offsetX offsetY blurRadius spreadRadius color (for hex, rgba or hsl)*/
 }
 .green {
-    background-color: hsl(240,100%,50%); /* violet rgb(127,0,255)  rose rgb(255,0,127)*/
+    background: linear-gradient(#55680D, #71F53E, #116C31); /* violet rgb(127,0,255)  rose rgb(255,0,127)*/
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+.blue {
+    background: linear-gradient(hsl(186,76%,16%), hsl(223,90%,60%), hsl(240,56%, 42%)); /* spring green rgb(0,255,127)  azure rgb(0,127,255)*/ /* cyan rgb(0,255,255)*/
+    box-shadow: 0 0 20px 0 hsla(223,59%,31%,.8);
 }
