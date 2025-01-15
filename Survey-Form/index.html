@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- HTML5 document type declaration -->
+<html lang="en">
+<!-- Sets document language to English -->
+<head>
+    <!-- Document metadata and resources -->
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper mobile rendering -->
+    <title>freeCodeCamp Survey Form</title>
+    <!-- Page title displayed in browser tab -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links external CSS stylesheet -->
+</head>
+<body>
+    <!-- Main page content begins -->
+    <div class="header">
+        <!-- Header section containing title and description -->
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <!-- Main page heading -->
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <!-- Page description text -->
+    </div>
+    <div class="container">
+        <!-- Main content container -->
+        <form id="survey-form">
+        <!-- Survey form begins -->
+        <div class="form-group">
+            <!-- Form group for name input -->
+            <label id="name-label" for="name">Name:</label>
+            <!-- Label for name field -->
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <!-- Text input for user's name (required) -->
+        </div>
+        <div class="form-group">
+            <!-- Form group for email input -->
+            <label id="email-label" for="email">Email:</label>
+            <!-- Label for email field -->
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <!-- Email input with validation (required) -->
+        </div>
+        <div class="form-group">
+            <!-- Form group for age input -->
+            <label id="number-label" for="number">Age (optional):</label>
+            <!-- Label for age field -->
+            <input type="number" id="number" min="10" max="99" placeholder="Age">
+            <!-- Number input with min/max constraints (optional) -->
+        </div>
+        <div class="form-group">
+            <!-- Form group for role selection -->
+            <label for="dropdown">Which option best describes your current role?</label>
+            <!-- Label for dropdown menu -->
+            <select id="dropdown">
+                <!-- Dropdown select element -->
+                <option value="">Select current role</option>
+                <!-- Default/placeholder option -->
+                <option value="student">Student</option>
+                <!-- Student role option -->
+                <option value="job">Full Time Job</option>
+                <!-- Full-time job option -->
+                <option value="learner">Independent Learner</option>
+                <!-- Independent learner option -->
+                <option value="other">Other</option>
+                <!-- Other role option -->
+            </select>
+        </div>
+        <div class="form-group">
+            <!-- Form group for recommendation question -->
+            <p>Would you recommend us to a friend?</p>
+            <!-- Question text -->
+            <label>
+                <!-- Radio button option -->
+                <input type="radio" name="recommend" value="definitely"> Definitely
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="maybe"> Maybe
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="not-sure"> Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <!-- Form group for feature preferences -->
+            <p>What features do you like?</p>
+            <!-- Question text -->
+            <label>
+                <!-- Checkbox option -->
+                <input type="checkbox" value="front-end"> Front-end Projects
+            </label>
+            <label>
+                <input type="checkbox" value="back-end"> Back-end Projects
+            </label>
+            <label>
+                <input type="checkbox" value="data-vis"> Data Visualization
+            </label>
+            <label>
+                <input type="checkbox" value="challenges"> Challenges
+            </label>
+            <label>
+                <input type="checkbox" value="open-source"> Open Source Community
+            </label>
+        </div>
+        <div class="form-group">
+            <!-- Form group for comments -->
+            <label for="comments">Any comments or suggestions?</label>
+            <!-- Label for comments field -->
+            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+            <!-- Textarea for free-form comments -->
+        </div>
+        <div class="form-group">
+            <!-- Form group for submit button -->
+            <button type="submit" id="submit">Submit</button>
+            <!-- Form submission button -->
+        </div>
+    </form>
+    </div>
+</body>
+<!-- End of document body -->
+</html>
+<!-- End of HTML document -->

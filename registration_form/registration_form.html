@@ -1,32 +1,57 @@
 <!DOCTYPE html>
+<!-- HTML5 document type declaration -->
 <html lang="en">
+<!-- Sets document language to English -->
     <head>
+        <!-- Document metadata and resources -->
         <meta charset="UTF-8">
+        <!-- Sets character encoding to UTF-8 -->
         <meta name="author" content="Brett Smith">
+        <!-- Specifies document author -->
         <meta name="description" content="freecodecamp.org registration form exercise">
+        <!-- Provides page description for search engines -->
         <link rel="stylesheet" href="styles.css"/>
+        <!-- Links external CSS stylesheet -->
         <title>Registration Form</title>
+        <!-- Page title displayed in browser tab -->
     </head>
     <body>
+        <!-- Main page content begins -->
         <h1>Registration Form</h1>
+        <!-- Main page heading -->
         <p>Please fill out this form with the required information</p>
-        <form method="post" action="https://register-demo.freecodecamp.org"> <!-- action="https://register-demo.freecodecamp.org" -->
+        <!-- Form instructions -->
+        <form method="post" action="https://register-demo.freecodecamp.org">
+        <!-- Form container with POST method and submission URL -->
             
             <fieldset>
+                <!-- Personal information section -->
                 <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name" required /></label> 
+                <!-- First name input (required) -->
                 <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last-name" /></label>
+                <!-- Last name input (optional) -->
                 <label for="email">Enter Your Email: <input id="email" type="email" name ="email" required /></label>
+                <!-- Email input (required) -->
                 <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" name="new-password" required /></label>  
+                <!-- Password input with validation pattern (required) -->
             </fieldset>
             <fieldset>
+                <!-- Account type selection -->
                 <legend>Account type (required)</legend>
+                <!-- Fieldset legend -->
                 <label for="personal-account"><input class="inline" id="personal-account" type="radio" name="account-type" checked/> Personal</label>
+                <!-- Personal account radio button (default selection) -->
                 <label for="business-account"><input class="inline" id="business-account" type="radio" name="account-type"/> Business</label>
+                <!-- Business account radio button -->
             </fieldset>
             <fieldset>
+                <!-- Additional information section -->
                 <label for="profile-picture"><input id="profile-picture" type="file" name="profile-picture"/>Upload a profile picture: </label>
+                <!-- Profile picture file upload -->
                 <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120" name="age"/></label>
+                <!-- Age input with validation (13-120) -->
                 <label for="referrer">How did you hear about us?
+                    <!-- Referral source dropdown -->
                     <select id="referrer" name="referrer">
                         <option value="">(select one)</option>
                         <option value="1">freeCodeCamp News</option>
@@ -36,10 +61,15 @@
                     </select>
                 </label>
                 <label for="bio">Provide a bio: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="bio-text"></textarea></label>
+                <!-- Bio textarea with placeholder text -->
             </fieldset>
+            <!-- Terms and conditions acceptance -->
             <label for="terms-and-conditions"><input class="inline" id="terms-and-conditions" type="checkbox" required name="terms"/> I accept 
                 the <a href="https://www.freecodecamp.org/news/terms-of-service/"> terms and conditions</a></label>
+            <!-- Submit button -->
             <input type="submit" value="Submit"/>
         </form>
     </body>
+    <!-- End of document body -->
 </html>
+<!-- End of HTML document -->

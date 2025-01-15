@@ -1,82 +1,101 @@
 body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    font-family: sans-serif;
-    padding: 20px;
+    /* Body background and typography */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Coffee beans background */
+    font-family: sans-serif; /* Default sans-serif font */
+    padding: 20px; /* Padding around content */
   }
 
   h1, h2, p {
+    /* Center align headings and paragraphs */
     text-align: center;
   }
   h1, h2 {
-    font-family: Impact, serif;
+    /* Heading font styles */
+    font-family: Impact, serif; /* Bold serif font */
   }
   h1 {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    /* Main title styles */
+    font-size: 40px; /* Large font size */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 15px; /* Space below title */
   }
   h2 {
-    font-size: 30px;
+    /* Section heading styles */
+    font-size: 30px; /* Medium font size */
   }
 
   .bottom-line {
-    margin-top: 25px;
+    /* Bottom divider spacing */
+    margin-top: 25px; /* Space above bottom line */
   }
 
   .established {
-    font-style: italic;
+    /* Establishment date styling */
+    font-style: italic; /* Italicized text */
   }
   .menu {
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
+    /* Main menu container */
+    width: 80%; /* Relative width */
+    background-color: burlywood; /* Light brown background */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    padding: 20px; /* Inner spacing */
+    max-width: 500px; /* Maximum width */
   }
 
   img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -25px;
+    /* Image positioning */
+    display: block; /* Block-level element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    margin-top: -25px; /* Negative margin to overlap */
   }
   hr {
-    height: 2px;
-    background-color: brown;
-    border-color: brown;
+    /* Horizontal rule styling */
+    height: 2px; /* Thickness */
+    background-color: brown; /* Brown color */
+    border-color: brown; /* Border color */
   }
   .item p {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
+    /* Menu item paragraph styles */
+    display: inline-block; /* Inline block display */
+    margin-top: 5px; /* Top margin */
+    margin-bottom: 5px; /* Bottom margin */
+    font-size: 18px; /* Medium font size */
   }
   .flavor, .dessert {
-    text-align: left;
-    width: 75%;
+    /* Menu item name styling */
+    text-align: left; /* Left align text */
+    width: 75%; /* Relative width */
   }
   
   .price {
-    text-align: right;
-    width: 25%;
+    /* Price styling */
+    text-align: right; /* Right align text */
+    width: 25%; /* Relative width */
   }
   footer {
-    font-size: 14px;
+    /* Footer text size */
+    font-size: 14px; /* Small font size */
   }
   /*FOOTER*/
   .address {
-    margin-bottom: 5px;
+    /* Address spacing */
+    margin-bottom: 5px; /* Space below address */
   }
   a {
-    color: black;
+    /* Link styling */
+    color: black; /* Default link color */
   }
   a:visited {
-    color: black;
+    /* Visited link state */
+    color: black; /* Maintain black color */
   }
   a:hover {
-    color: brown;
+    /* Hover state */
+    color: brown; /* Change to brown on hover */
   }
   a:active {
-    color: brown;
+    /* Active state */
+    color: brown; /* Change to brown when clicked */
   }

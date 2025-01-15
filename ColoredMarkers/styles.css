@@ -1,42 +1,49 @@
 h1 {
+    /* Center align main heading */
     text-align: center;
      /* cyan rgb(0,255,255)*/
 }
 .container{
-    background-color: rgb(255,255,255);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
+    /* Marker container styling */
+    background-color: rgb(255,255,255); /* White background */
+    padding-top: 10px; /* Top padding */
+    padding-bottom: 10px; /* Bottom padding */
+    padding-left: 0px; /* No left padding */
+    padding-right: 0px; /* No right padding */
   }
 .marker {
-    height: 25px;
-    width: 200px;
-    margin: 10px auto;
+    /* Base marker styles */
+    height: 25px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    margin: 10px auto; /* Centered with vertical spacing */
 }
 .cap{
-    display: inline-block;
-    width: 60px;
-    height: 25px;
-    
+    /* Marker cap styles */
+    display: inline-block; /* Inline block display */
+    width: 60px; /* Cap width */
+    height: 25px; /* Full marker height */
 }
 .sleeve {
-    display: inline-block;
-    width: 110px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-left: 10px double rgba(0,0,0,75%);
+    /* Marker sleeve styles */
+    display: inline-block; /* Inline block display */
+    width: 110px; /* Sleeve width */
+    height: 25px; /* Full marker height */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border-left: 10px double rgba(0,0,0,75%); /* Double border on left */
 }
 /*colors: (rgba, hex, hsl) hue, saturation lightness alpha channel (0-1, opacity)*/
 .red {
-    background: linear-gradient(rgb(122,74,14) ,rgb(245,62,113) ,rgb(162,27,27)); /* orange rgb(255,127,0)  chartreuse rgb(127,255,0)*/
-    box-shadow: 0 0 20px 0 rgba(83,14,14,.8); /*box-shadow: offsetX offsetY blurRadius spreadRadius color (for hex, rgba or hsl)*/
+    /* Red marker gradient and shadow */
+    background: linear-gradient(rgb(122,74,14) ,rgb(245,62,113) ,rgb(162,27,27)); /* Brown to pink to dark red gradient */
+    box-shadow: 0 0 20px 0 rgba(83,14,14,.8); /* Red shadow with 80% opacity */
 }
 .green {
-    background: linear-gradient(#55680D, #71F53E, #116C31); /* violet rgb(127,0,255)  rose rgb(255,0,127)*/
-    box-shadow: 0 0 20px 0 #3B7E20CC;
+    /* Green marker gradient and shadow */
+    background: linear-gradient(#55680D, #71F53E, #116C31); /* Dark green to bright green to forest green gradient */
+    box-shadow: 0 0 20px 0 #3B7E20CC; /* Green shadow with 80% opacity */
 }
 .blue {
-    background: linear-gradient(hsl(186,76%,16%), hsl(223,90%,60%), hsl(240,56%, 42%)); /* spring green rgb(0,255,127)  azure rgb(0,127,255)*/ /* cyan rgb(0,255,255)*/
-    box-shadow: 0 0 20px 0 hsla(223,59%,31%,.8);
+    /* Blue marker gradient and shadow */
+    background: linear-gradient(hsl(186,76%,16%), hsl(223,90%,60%), hsl(240,56%, 42%)); /* Teal to blue to dark blue gradient */
+    box-shadow: 0 0 20px 0 hsla(223,59%,31%,.8); /* Blue shadow with 80% opacity */
 }

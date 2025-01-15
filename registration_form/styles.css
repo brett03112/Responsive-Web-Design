@@ -1,64 +1,78 @@
 body {
-    width: 100%; /* 100% of parent */
-    height: 100vh; /* 100% of viewport height */
-    margin: 0; /* removes margin */
-    background-color: #1B1B32; /* background color */
-    color: #F5F6F7; /* text color */
-    font-family: Tahoma; /* font family */
-    font-size: 16px; /* font size */
+    /* Global page styles */
+    width: 100%; /* Full width of viewport */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #1B1B32; /* Dark blue background */
+    color: #F5F6F7; /* Light text color for contrast */
+    font-family: Tahoma, sans-serif; /* Clean, readable font */
+    font-size: 16px; /* Base font size */
 }
 h1, p {
-    text-align: center; /* centers text */
-    margin: 1em auto; /* 1em top and bottom, auto right and left */
+    /* Typography styles */
+    text-align: center; /* Center align headings and paragraphs */
+    margin: 1em auto; /* Vertical spacing with auto horizontal margins for centering */
 }
 
 label { 
-    display: block; /* makes it a block element */
-    margin: 0.5rem 0; /* 0.5rem top and bottom, 0 right and left */
+    /* Form label styles */
+    display: block; /* Make labels block elements for proper spacing */
+    margin: 0.5rem 0; /* Vertical spacing between form elements */
 }
 form {
-    margin: 0 auto; /* 0 top and bottom, auto right and left */
-    max-width: 500px; /* 500px of parent */
-    min-width: 300px; /* 300px of parent */
-    width: 60vw; /* 60% of parent */
-    padding-bottom: 2em; /* 2em of parent */
+    /* Form container styles */
+    margin: 0 auto; /* Center form horizontally */
+    max-width: 500px; /* Maximum form width */
+    min-width: 300px; /* Minimum form width */
+    width: 60vw; /* Responsive width based on viewport */
+    padding-bottom: 2em; /* Bottom padding for spacing */
 }
 fieldset{
-    border: none; /* removes the border */
-    padding: 2rem 0; /* 2rem top and bottom, 0 right and left */
-    border-bottom: 3px solid #3b3b4f; /* bottom border */
+    /* Fieldset container styles */
+    border: none; /* Remove default border */
+    padding: 2rem 0; /* Vertical padding for spacing */
+    border-bottom: 3px solid #3b3b4f; /* Bottom border for visual separation */
 }
 fieldset:last-of-type{
-    border-bottom: none; /* removes the bottom border */
+    /* Remove border from last fieldset */
+    border-bottom: none; /* No bottom border for final section */
 }
 input, textarea, select {
-    width: 100%; /* 100% of parent */
-    margin: 10px 0 0 0; /* 10px top, 0 right, 0 bottom, 0 left */
-    min-height: 2em; /* 2em of parent */
+    /* Form input element styles */
+    width: 100%; /* Full width of container */
+    margin: 10px 0 0 0; /* Top margin for spacing */
+    min-height: 2em; /* Minimum height for touch targets */
 }
 input, textarea {
-    background-color: #0a0a23; /* bottom border */
-    border: 1px solid #0a0a23; /* 1px solid of parent */
-    color: #ffffff; /* text color */ 
+    /* Input and textarea specific styles */
+    background-color: #0a0a23; /* Dark background for inputs */
+    border: 1px solid #0a0a23; /* Matching border color */
+    color: #ffffff; /* White text for contrast */
 }
      
 .inline {
-    width: unset; /* 100% of parent */
-    margin: 0 0.5em 0 0; /* 0 top, 0.5em right, 0 bottom, 0 left */
-    vertical-align: middle; /* vertical alignment of parent */
+    /* Inline form elements (radio buttons, checkboxes) */
+    width: unset; /* Override full width */
+    margin: 0 0.5em 0 0; /* Right margin for spacing */
+    vertical-align: middle; /* Align with text */
 }
 input[type="submit"]{ 
-    display: block; /* makes it a block element */
-    width: 60%; /* 60% of parent */
-    margin: 1em auto; /* 1em top and bottom, auto right and left */
-    height: 2em; /* 2em of parent */
-    font-size: 1.1rem; /* 1.1rem of parent */
-    background-color: #3b3b4f; /* bottom border */
-    border-color: white; /* 1px solid of parent */
-    min-width: 300px; /* Never be below 300px of parent */
+    /* Submit button styles */
+    display: block; /* Make button a block element */
+    width: 60%; /* Relative width */
+    margin: 1em auto; /* Center with vertical spacing */
+    height: 2em; /* Consistent height */
+    font-size: 1.1rem; /* Slightly larger text */
+    background-color: #3b3b4f; /* Dark background */
+    border-color: white; /* White border for contrast */
+    min-width: 300px; /* Minimum width for accessibility */
 }
 input[type="file"]{
-    padding: 1px 2px; /* 1px top and bottom, 2px right and left */
-} a{
-    color: #dfdfe2; /* text color */
+    /* File input specific styles */
+    padding: 1px 2px; /* Small padding for better appearance */
+}
+
+a {
+    /* Link styles */
+    color: #dfdfe2; /* Light gray for visibility on dark background */
 }
